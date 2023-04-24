@@ -85,6 +85,10 @@ public:
         length = 0;
     }
     //---------------------------//
+    int QueueSize(){
+        return length;
+    }
+    //---------------------------//
     void print()
     {
         Node *curr = first;
