@@ -1,38 +1,34 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include "QueueWithLinkedList.h"
 
 template<class T>
-class QueueWithLinkedList{
-    struct Node{
-        T item ;
-        Node *next;
-    };
-    Node *first , *last;
-    int length;
-
-public:
-    QueueWithLinkedList(){
+QueueWithLinkedList<T>:: QueueWithLinkedList()
+{
         first = last = NULL;
         length = 0;
-    }
-    //---------------------------//
-    bool isEmpty(){
+}
+
+template<class T>
+bool QueueWithLinkedList<T> :: isEmpty()
+{
     return first == NULL;
-    }
-    //---------------------------//
-    T getFirst()
-    {
+}
+
+template<class T>
+T QueueWithLinkedList<T> :: getFirst()
+{
         if(!isEmpty())
             return first->item;
-    }
-    //---------------------------//
-    T getLast()
-    {
+}
+
+template<class T>
+T QueueWithLinkedList<T> :: getLast()
+{
         if(!isEmpty())
             return last->item;
-    }
-    //---------------------------//
-    void enQueue(T element)
+}
+
+template<class T>
+void QueueWithLinkedList<T> :: enQueue(T element)
     {
         Node *newNode = new Node;
         newNode->item = element;
@@ -50,8 +46,11 @@ public:
         }
         length++;
     }
-    //---------------------------//
-    void deQueue(){
+
+
+template<class T>
+void QueueWithLinkedList<T> :: deQueue()
+{
         if(isEmpty())
             cout << "Queue is Empty";
         else
@@ -71,9 +70,11 @@ public:
                 length--;
             }
         }
-    }
-    //---------------------------//
-    void clear(){
+}
+
+template<class T>
+void QueueWithLinkedList<T> :: clear()
+{
         Node* curr = first;
         while (first != NULL)
         {
@@ -83,13 +84,16 @@ public:
         }
         last = NULL;
         length = 0;
-    }
-    //---------------------------//
-    int QueueSize(){
+}
+
+template<class T>
+int QueueWithLinkedList<T> :: QueueSize()
+{
         return length;
-    }
-    //---------------------------//
-    void print()
+}
+
+template<class T>
+void QueueWithLinkedList<T> :: print()
     {
         Node *curr = first;
         if (isEmpty())
@@ -103,15 +107,4 @@ public:
             }
         }
     }
-};
 
-
-int main(){
-    QueueWithLinkedList<int> qu1;
-    qu1.enQueue(1);
-    qu1.enQueue(2);
-    qu1.enQueue(3);
-    qu1.enQueue(4);
-
-    qu1.print();
-}
