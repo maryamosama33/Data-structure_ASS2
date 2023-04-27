@@ -1,40 +1,38 @@
-#include <iostream>
-using namespace std;
+#include "CircularLinkedList.h"
+template<class T>
+CircularLinkedList<T>:: CircularLinkedList()
+{
+    first = nullptr;
+    last = nullptr;
+    length = 0;
+}
+
 
 template<class T>
-class CircularLinkedList
+bool CircularLinkedList<T>:: isEmpty()
 {
-private:
-    struct Node
-    {
-        T item;
-        Node *next;
-    };
+    return length == 0;
+}
 
-    Node *first , *last;
-    int length;
 
-public:
-    CircularLinkedList(){
-        first = nullptr;
-        last = nullptr;
-        length = 0;
-    }
-    //------------------------------//
-    bool isEmpty(){
-        return length == 0;
-    }
-    //------------------------------//
-    int CircularLinkedListSize(){
+template<class T>
+int CircularLinkedList<T> :: CircularLinkedListSize()
+{
         return length;
-    }
-    //------------------------------//
-    void clear(){
+}
+
+
+template<class T>
+void CircularLinkedList<T> :: clear()
+{
         first = last = nullptr;
         length = 0;
-    }
-    //------------------------------//
-    void insertAtHead(T element){
+}
+
+
+template<class T>
+void CircularLinkedList<T> :: insertAtHead(T element)
+{
         Node *newNode = new Node();
         newNode->item = element;
 
@@ -47,9 +45,12 @@ public:
             first = newNode;
         }
         length++;
-    }
-    //-----------------------------//
-    void insertAtEnd(T element){
+}
+
+
+template<class T>
+void CircularLinkedList<T> :: insertAtEnd(T element)
+{
         Node *newNode = new Node();
         newNode->item = element;
         if(length == 0)
@@ -61,9 +62,12 @@ public:
             last = newNode;
         }
         length++;
-    }
-    //-----------------------------//
-    void insertAt(T element, int index){
+}
+
+
+template<class T>
+void CircularLinkedList<T> :: insertAt(T element, int index)
+{
         Node* newNode = new Node ;
         newNode->item = element ;
 
@@ -81,9 +85,12 @@ public:
             Curr->next = newNode;
         }
             length++;
-    }
-    //-----------------------------//
-    void replaceAt(T element , int index){
+}
+
+
+template<class T>
+void CircularLinkedList<T> :: replaceAt(T element , int index)
+{
 
         if (index == 0)
             first->item = element;
@@ -96,9 +103,12 @@ public:
 
             Curr->item = element;
         }
-    }
-    //-----------------------------//
-    void removeAtHead(){
+}
+
+
+template<class T>
+void CircularLinkedList<T> :: removeAtHead()
+{
         if(length == 0)
             return;
         else if (length == 1)
@@ -115,9 +125,12 @@ public:
             delete Curr;
             length--;
         }
-    }
-    //-----------------------------//
-    void removeAtEnd(){
+}
+
+
+template<class T>
+void CircularLinkedList<T> :: removeAtEnd()
+{
         if(length == 0)
             return;
         else if (length == 1)
@@ -137,9 +150,12 @@ public:
             last->next = first;
             length--;
         }
-    }
-    //-----------------------------//
-    void removeAt(int index){
+}
+
+
+template<class T>
+void CircularLinkedList<T> :: removeAt(int index)
+{
         if (index == 0)
             removeAtHead();
         else if(index == length - 1)
@@ -154,10 +170,12 @@ public:
             delete temp;
             length--;
         }
-    }
-    //-----------------------------//
-    T retrieveAt(int index){
-        if(index == 0)
+}
+
+
+template<class T>
+T  CircularLinkedList<T> ::retrieveAt(int index) {
+    if(index == 0)
             return first->item;
         else if(index == length - 1)
             return last->item;
@@ -168,9 +186,12 @@ public:
 
             return Curr->item;
         }
-    }
-    //-----------------------------//
-    bool isItemAtEqual(T element , int index){
+}
+
+
+template<class T>
+bool CircularLinkedList<T> :: isItemAtEqual(T element , int index)
+{
         if (index == 0)
         {
             if(first->item == element)
@@ -191,9 +212,12 @@ public:
                 return true;
         }
         return false;
-    }
-    //-----------------------------//
-    bool isExist(T element){
+}
+
+
+template<class T>
+bool CircularLinkedList<T> :: isExist(T element)
+{
         Node *Curr = first;
         if (length == 0)
             return false;
@@ -207,15 +231,21 @@ public:
             }
         }
         return false;
-    }
-    //-----------------------------//
-    void swap(int firstItemIdx , int secondItemIdx){
+}
+
+
+template<class T>
+void CircularLinkedList<T> :: swap(int firstItemIdx , int secondItemIdx)
+{
         T temp = retrieveAt(firstItemIdx);
         replaceAt(retrieveAt(secondItemIdx) , firstItemIdx);
         replaceAt(temp , secondItemIdx);
-    }
-    //-----------------------------//
-    void print(){
+}
+
+
+template<class T>
+void CircularLinkedList<T> :: print()
+{
         Node *Curr = first;
         if (length == 0)
             cout << "Empty List" << endl;
@@ -227,9 +257,7 @@ public:
                     break;
             }
         }
-    }
-};
-
+}
 
 
 
