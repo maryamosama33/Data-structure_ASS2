@@ -4,7 +4,7 @@ using namespace std;
 template<class T>
 class QueueWithLinkedList{
     struct Node{
-        int item ;
+        T item ;
         Node *next;
     };
     Node *first , *last;
@@ -20,13 +20,13 @@ public:
     return first == NULL;
     }
     //---------------------------//
-    int getFirst()
+    T getFirst()
     {
         if(!isEmpty())
             return first->item;
     }
     //---------------------------//
-    int getLast()
+    T getLast()
     {
         if(!isEmpty())
             return last->item;
