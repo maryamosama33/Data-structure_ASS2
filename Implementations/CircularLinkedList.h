@@ -1,3 +1,10 @@
+//
+// Created by T on 4/28/2023.
+//
+
+#ifndef PRBLEMS_CIRCULARLINKEDLIST_H
+#define PRBLEMS_CIRCULARLINKEDLIST_H
+
 #include <iostream>
 using namespace std;
 
@@ -80,7 +87,7 @@ public:
             newNode->next = Curr->next;
             Curr->next = newNode;
         }
-            length++;
+        length++;
     }
     //-----------------------------//
     void replaceAt(T element , int index){
@@ -230,10 +237,4 @@ public:
     }
 };
 
-
-
-
-
-
-
-
+#endif //PRBLEMS_CIRCULARLINKEDLIST_H
