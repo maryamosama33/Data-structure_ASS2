@@ -1,3 +1,10 @@
+//
+// Created by T on 4/28/2023.
+//
+
+#ifndef PRBLEMS_QUEUEWITHLINKEDLIST_H
+#define PRBLEMS_QUEUEWITHLINKEDLIST_H
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -17,7 +24,7 @@ public:
     }
     //---------------------------//
     bool isEmpty(){
-    return first == NULL;
+        return first == NULL;
     }
     //---------------------------//
     T getFirst()
@@ -106,12 +113,4 @@ public:
 };
 
 
-int main(){
-    QueueWithLinkedList<int> qu1;
-    qu1.enQueue(1);
-    qu1.enQueue(2);
-    qu1.enQueue(3);
-    qu1.enQueue(4);
-
-    qu1.print();
-}
+#endif //PRBLEMS_QUEUEWITHLINKEDLIST_H
