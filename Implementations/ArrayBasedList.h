@@ -1,3 +1,6 @@
+
+#ifndef IMPLEMENTATIONS_ARRAYBASEDLIST_H
+#define IMPLEMENTATIONS_ARRAYBASEDLIST_H
 #include <iostream>
 using namespace std;
 
@@ -9,20 +12,20 @@ private:
     int size;      // current size of the list
 public:
 
-   arrayBasedList(int max=100);
-   void insert(T element);
-   void insertAt(T element, int index);
-   T retrieveAt(int index);
-   void removeAt(int index);
-   void replaceAt(T newElement, int index);
-   bool isItemAtEqual(T element, int index);
-   bool isEmpty();
-   bool isFull();
-   int listSize();
-   int maxListSize();
-   void clear();
-   void print();
-   ~arrayBasedList();
+    arrayBasedList(int max=100);
+    void insert(T element);
+    void insertAt(T element, int index);
+    T retrieveAt(int index);
+    void removeAt(int index);
+    void replaceAt(T newElement, int index);
+    bool isItemAtEqual(T element, int index);
+    bool isEmpty();
+    bool isFull();
+    int listSize();
+    int maxListSize();
+    void clear();
+    void print();
+    ~arrayBasedList();
 };
 //---------------------------------------------------------------------------
 template<class T>
@@ -153,3 +156,5 @@ int main() {
     cout << "Is list empty? " << list.isEmpty() << endl; // prints: Is list empty? 1 (true)
     return 0;
 }
+
+#endif //IMPLEMENTATIONS_ARRAYBASEDLIST_H
