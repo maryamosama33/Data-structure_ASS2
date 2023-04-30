@@ -1,3 +1,6 @@
+
+#ifndef PRBLEMS_SINGLELINKEDLIST_H
+#define PRBLEMS_SINGLELINKEDLIST_H
 #include <iostream>
 using namespace std;
 
@@ -35,9 +38,9 @@ public:
 //----------------------------------------------------
 template<class T>
 singleLinkedList<T>::singleLinkedList() {
-   first = nullptr;
-   last = nullptr;
-   size=0;
+    first = nullptr;
+    last = nullptr;
+    size=0;
 }
 //----------------------------------------------------
 template<class T>
@@ -288,39 +291,4 @@ template<class T>
 singleLinkedList<T>::~singleLinkedList() {
     clear();
 }
-//----------------------------------------------------
-
-int main() {
-    singleLinkedList<int> list;
-    cout << "Initial size of list: " << list.linkedListSize() << endl; // Output: 0
-
-    // add some elements to the list
-    list.insertAtHead(3);
-    list.insertAtHead(2);
-    list.insertAtHead(1);
-    list.insertAtTail(4);
-    list.insertAtTail(5);
-    cout << "Size of list after adding elements: " << list.linkedListSize() << endl; // Output: 5
-    list.print(); // Output: 1 2 3 4 5
-
-    // check if an element exists in the list
-    cout << "Is 3 in the list? " << list.isExist(3) << endl; // Output: 1 (true)
-    cout << "Is 6 in the list? " << list.isExist(6) << endl; // Output: 0 (false)
-
-    // replace an element at a specific index
-    list.replaceAt(10, 2);
-    list.print(); // Output: 1 2 10 4 5
-
-    // check if an element at a specific index is equal to a given value
-    cout << "Is the element at index 2 equal to 10? " << list.isItemAtEqual(10, 2) << endl; // Output: 1 (true)
-
-    // swap two nodes without swapping data
-    list.swap(1, 3);
-    list.print(); // Output: 1 4 10 2 5
-
-    // clear the list
-    list.clear();
-    cout << "Size of list after clearing: " << list.linkedListSize() << endl; // Output: 0
-
-    return 0;
-}
+#endif //PRBLEMS_SINGLELINKEDLIST_H
