@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#include"Stack.cpp"
+#include"Stack.h"
 using namespace std;
 
 int getPrecedence(char op) {
@@ -51,9 +51,9 @@ string infixToPostfix(string infix) {
     }
     return postfix;
 }
-int main() {
-    string infix = "X^Y / (5*Z) + 2";
-    string postfix = infixToPostfix(infix);
-    cout << postfix << endl;
-    return 0;
-}
+//int main() {
+//    string infix = "X^Y / (5*Z) + 2";
+//    string postfix = infixToPostfix(infix);
+//    cout << postfix << endl;
+//    return 0;
+//}

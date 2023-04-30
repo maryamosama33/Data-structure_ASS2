@@ -133,12 +133,12 @@ public:
         else
         {
             Node* Curr = first;
-            for(int i = 0 ; i < length - 2 ; i++)
+            while(Curr->next != last)
                 Curr = Curr->next;
 
+            Curr->next = first;
             delete last;
             last = Curr;
-            last->next = first;
             length--;
         }
     }

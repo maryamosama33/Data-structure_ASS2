@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#include"QueueWithLinkedList.cpp"
+#include"QueueWithLinkedList.h"
 using namespace std;
 
 void printBinaryIntegers(int N) {
@@ -16,8 +16,8 @@ void printBinaryIntegers(int N) {
 }
 
 
-int main() {
-    int N = 3;
-    printBinaryIntegers(N);
-    return 0;
-}
+//int main() {
+//    int N = 3;
+//    printBinaryIntegers(N);
+//    return 0;
+//}

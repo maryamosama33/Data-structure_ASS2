@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#include"Stack.cpp"
+#include"Stack.h"
 using namespace std;
 
 int longestValidParentheses(string s) {
@@ -20,7 +20,7 @@ int longestValidParentheses(string s) {
     }
     return maxLen;
 }
-int main() {
-    string s = "(()";
-    cout << longestValidParentheses(s) << endl;
-}
+//int main() {
+//    string s = "(()";
+//    cout << longestValidParentheses(s) << endl;
+//}
