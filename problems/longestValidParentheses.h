@@ -1,3 +1,7 @@
+
+
+#ifndef DATA_STRUCTURE_ASS2_LONGESTVALIDPARENTHESES_H
+#define DATA_STRUCTURE_ASS2_LONGESTVALIDPARENTHESES_H
 #include<bits/stdc++.h>
 #include"Stack.h"
 using namespace std;
@@ -20,7 +24,5 @@ int longestValidParentheses(string s) {
     }
     return maxLen;
 }
-//int main() {
-//    string s = "(()";
-//    cout << longestValidParentheses(s) << endl;
-//}
+
+#endif //DATA_STRUCTURE_ASS2_LONGESTVALIDPARENTHESES_H

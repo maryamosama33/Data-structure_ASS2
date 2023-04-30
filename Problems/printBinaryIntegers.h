@@ -1,3 +1,6 @@
+
+#ifndef DATA_STRUCTURE_ASS2_PRINTBINARYINTEGERS_H
+#define DATA_STRUCTURE_ASS2_PRINTBINARYINTEGERS_H
 #include<bits/stdc++.h>
 #include"QueueWithLinkedList.h"
 using namespace std;
@@ -15,9 +18,4 @@ void printBinaryIntegers(int N) {
     cout<<endl;
 }
 
-
-//int main() {
-//    int N = 3;
-//    printBinaryIntegers(N);
-//    return 0;
-//}
+#endif //DATA_STRUCTURE_ASS2_PRINTBINARYINTEGERS_H

@@ -1,3 +1,6 @@
+
+#ifndef DATA_STRUCTURE_ASS2_INFIXTOPOSTFIX_H
+#define DATA_STRUCTURE_ASS2_INFIXTOPOSTFIX_H
 #include<bits/stdc++.h>
 #include"Stack.h"
 using namespace std;
@@ -51,9 +54,4 @@ string infixToPostfix(string infix) {
     }
     return postfix;
 }
-//int main() {
-//    string infix = "X^Y / (5*Z) + 2";
-//    string postfix = infixToPostfix(infix);
-//    cout << postfix << endl;
-//    return 0;
-//}
+#endif //DATA_STRUCTURE_ASS2_INFIXTOPOSTFIX_H

@@ -5,11 +5,14 @@
 #include "Implementations/SingleLinkedList.h"
 #include "Implementations/Stack.h"
 
-//#include "Problems/longestValidParentheses.cpp"
-//#include "Problems/printBinaryIntegers.cpp"
-//#include "Problems/infixToPostfix.cpp"
+#include "Problems/SortingQueue.h"
+#include "Problems/longestValidParentheses.h"
+#include "Problems/printBinaryIntegers.h"
+#include "Problems/infixToPostfix.h"
 
 int main(){
+    ///++++++++++++++++++++++Implementations++++++++++++++++++++++///
+
     ////Try array based list
 
     ////Try singly linked list
@@ -60,15 +63,41 @@ int main(){
 //    cout << q.QueueSize() << endl;
 
     /////Try Stack
-    Stack<int> s;
-    s.push(1);
-    s.push(2);
-    s.push(3);
+//    Stack<int> s;
+//    s.push(1);
+//    s.push(2);
+//    s.push(3);
+//
+//    s.print();
+//    cout << s.top() << endl;
+//    s.pop();
+//    cout << s.stackSize() << endl;
+//    s.print();
 
-    s.print();
-    cout << s.top() << endl;
-    s.pop();
-    cout << s.stackSize() << endl;
-    s.print();
+    ///++++++++++++++++++++++Problems++++++++++++++++++++++///
+    /////Try Sorting Queue
+//    QueueWithLinkedList<int> q;
+//    q.enQueue(5);
+//    q.enQueue(3);
+//    q.enQueue(1);
+//    q.enQueue(2);
+//
+//    SortingQueue(q);
+//    q.print();
+//    cout << endl;
+
+    /////Try Longest Valid Parentheses
+//    string s = "(()";
+//    cout << longestValidParentheses(s) << endl;
+
+    /////Try Print Binary Integers
+//    int N = 3;
+//    printBinaryIntegers(N);
+
+    /////Try Infix to Postfix
+//    string infix = "X^Y / (5*Z) + 2";
+//    string postfix = infixToPostfix(infix);
+//    cout << postfix << endl;
+
 
 }
