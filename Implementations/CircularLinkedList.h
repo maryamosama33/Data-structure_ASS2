@@ -1,6 +1,3 @@
-//
-// Created by T on 4/28/2023.
-//
 
 #ifndef PRBLEMS_CIRCULARLINKEDLIST_H
 #define PRBLEMS_CIRCULARLINKEDLIST_H

@@ -1,6 +1,3 @@
-//
-// Created by T on 4/28/2023.
-//
 
 #ifndef PRBLEMS_QUEUEWITHLINKEDLIST_H
 #define PRBLEMS_QUEUEWITHLINKEDLIST_H

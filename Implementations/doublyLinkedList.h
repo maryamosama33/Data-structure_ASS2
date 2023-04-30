@@ -1,12 +1,9 @@
-//
-// Created by Salma ameer on 30/04/2023.
-//
+
+#ifndef IMPLEMENTATIONS_DOUBLYLINKEDLIST_H
+#define IMPLEMENTATIONS_DOUBLYLINKEDLIST_H
 
 #include <iostream>
 using namespace std;
-
-
-
 
 template<class t>
 class doublyLinkedList{
@@ -133,13 +130,4 @@ void doublyLinkedList<t>::insertAtHead(t item) {
 
 }
 
-
-int main(){
-    doublyLinkedList<int> d;
-    d.insertAtHead(4);
-    d.insertAtHead(50);
-    //cout << d.doubleLinkedListSize();
-    d.backwardTraversal();
-    d.clear();
-
-}
+#endif //IMPLEMENTATIONS_DOUBLYLINKEDLIST_H
