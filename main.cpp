@@ -9,6 +9,7 @@
 #include "Problems/longestValidParentheses.h"
 #include "Problems/printBinaryIntegers.h"
 #include "Problems/infixToPostfix.h"
+#include "Problems/MergeLinkedList.h"
 
 int main(){
     ///++++++++++++++++++++++Implementations++++++++++++++++++++++///
@@ -150,5 +151,21 @@ int main(){
 
 
     ////Try MergeLinkedList
+//    singleLinkedList<int> list1;
+//    list1.insertAtHead(5);
+//    list1.insertAtHead(4);
+//    list1.insertAtHead(3);
+//    list1.insertAtHead(2);
+//    list1.insertAtHead(1);
+//
+//    singleLinkedList<int> list2;
+//    list2.insertAtHead(10);
+//    list2.insertAtHead(9);
+//    list2.insertAtHead(8);
+//    list2.insertAtHead(7);
+//    list2.insertAtHead(6);
+//
+//    singleLinkedList<int> list3 = mergeLinkedList(list1, list2);
+//    list3.print();
 
 }
