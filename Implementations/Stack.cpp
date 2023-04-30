@@ -69,6 +69,17 @@ int Stack<T>::stackSize() {
 
 template<typename T>
 void Stack<T>::clear() {
-    head = nullptr;
-    cout << "Stack has been cleared!" << endl;
+
+    if (head != nullptr) {
+        Node<T> temp = new Node<T>();
+        while (head != nullptr) {
+            temp = head;
+            head = head->next;
+            free(temp);
+        }
+        size = 0;
+        cout << "Stack has been cleared!" << endl;
+
+    }
 }
+
