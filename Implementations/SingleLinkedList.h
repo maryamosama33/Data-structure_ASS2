@@ -18,6 +18,7 @@ private:
     int size;
 public:
     singleLinkedList();
+    node<int>* getHead();
     void insertAtHead (T element);
     void insertAtTail (T element);
     void insertAt (T element, int index) ;
@@ -41,6 +42,11 @@ singleLinkedList<T>::singleLinkedList() {
     first = nullptr;
     last = nullptr;
     size=0;
+}
+//----------------------------------------------------
+template<class T>
+node<int>* singleLinkedList<T>::getHead() {
+    return first;
 }
 //----------------------------------------------------
 template<class T>

@@ -36,6 +36,7 @@ int main(){
 //    list.clear(); // clears all elements from the list
 //    cout << "Is list empty? " << list.isEmpty() << endl; // prints: Is list empty? 1 (true)
 
+
     ////Try singly linked list
 //    singleLinkedList<int> list;
 //    cout << "Initial size of list: " << list.linkedListSize() << endl; // Output: 0
@@ -62,8 +63,8 @@ int main(){
 //    list.clear();
 //    cout << "Size of list after clearing: " << list.linkedListSize() << endl; // Output: 0
 
-    ////Try doubly linked list
 
+    ////Try doubly linked list
 //    doublyLinkedList<int> d;
 //    d.insertAtHead(3);
 //    d.insertAtHead(50);
@@ -76,10 +77,6 @@ int main(){
 //    d.forwardTraversal();
 //    d.swap(2,3);
 //    d.forwardTraversal();
-
-
-
-
 
 
     ////Try circular linked list
@@ -111,6 +108,7 @@ int main(){
 //    cll.print();
 //    cout << endl;
 
+
     /////Try Queue
 //    QueueWithLinkedList<int> q;
 //    q.enQueue(1);
@@ -124,6 +122,7 @@ int main(){
 //    q.print();
 //    cout << endl;
 //    cout << q.QueueSize() << endl;
+
 
     /////Try Stack
 //    Stack<int> s;
@@ -166,20 +165,25 @@ int main(){
     ////Try MergeLinkedList
 //    singleLinkedList<int> list1;
 //    list1.insertAtHead(5);
-//    list1.insertAtHead(4);
 //    list1.insertAtHead(3);
-//    list1.insertAtHead(2);
 //    list1.insertAtHead(1);
 //
 //    singleLinkedList<int> list2;
-//    list2.insertAtHead(10);
-//    list2.insertAtHead(9);
-//    list2.insertAtHead(8);
-//    list2.insertAtHead(7);
 //    list2.insertAtHead(6);
+//    list2.insertAtHead(4);
+//    list2.insertAtHead(2);
 //
-//    singleLinkedList<int> list3 = mergeLinkedList(list1, list2);
-//    list3.print();
+//    singleLinkedList<int> list3;
+//    list3.insertAtHead(9);
+//    list3.insertAtHead(8);
+//    list3.insertAtHead(7);
+//
+//    singleLinkedList<int> lists[3] = {list1, list2, list3};
+//    singleLinkedList<int> mergedList = mergeKSortedLinkedLists(lists, 3);
+//
+//    mergedList.print();
+//    cout << endl;
+
 
         ////implement stack with queue
 //    QStack<int> q;
