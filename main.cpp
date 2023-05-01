@@ -64,6 +64,18 @@ int main(){
 
     ////Try doubly linked list
 
+//    doublyLinkedList<int> d;
+//    d.insertAtHead(3);
+//    d.insertAtHead(50);
+//    d.forwardTraversal();
+//    d.insertAtTail(60);
+//    d.forwardTraversal();
+//    d.insertAt(28,2);
+//    d.forwardTraversal();
+//    d.replaceAt(89,2);
+//    d.forwardTraversal();
+//    d.swap(2,3);
+//    d.forwardTraversal();
 
 
 
@@ -168,5 +180,19 @@ int main(){
 //
 //    singleLinkedList<int> list3 = mergeLinkedList(list1, list2);
 //    list3.print();
+
+        ////implement stack with queue
+//    QStack<int> q;
+//
+//    q.push(4);
+//    q.push(5);
+//    q.push(2);
+//    q.printStack();
+//    cout << endl;
+//    cout << q.top();
+//    q.pop();
+//    cout << endl;
+//    cout << "Stack after pop first element: ";
+//    q.printStack();
 
 }

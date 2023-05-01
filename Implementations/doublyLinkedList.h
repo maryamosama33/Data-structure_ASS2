@@ -455,23 +455,6 @@ void doublyLinkedList<t>::swap(int firstItemIdx, int secondItemIdx) { // & 7 & &
 
 
 
-int main(){
-    doublyLinkedList<int> d;
-    d.insertAtHead(3);
-    d.insertAtHead(50);
-    d.forwardTraversal();
-    d.insertAtTail(60);
-    d.forwardTraversal();
-    d.insertAt(28,2);
-    d.forwardTraversal();
-    d.replaceAt(89,2);
-    d.forwardTraversal();
-    d.swap(2,3);
-    d.forwardTraversal();
 
-
-
-
-}
 
 #endif //IMPLEMENTATIONS_DOUBLYLINKEDLIST_H
