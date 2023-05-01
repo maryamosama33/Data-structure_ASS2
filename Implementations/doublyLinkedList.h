@@ -7,18 +7,21 @@ using namespace std;
 
 template<class t>
 class doublyLinkedList{
-private:
+public:
     struct Node{
         Node* next;
         Node* previous;
         t data;
     };
+private:
+
 
     int size;
     Node* head;
     Node* tail;
 
 public:
+
 
     doublyLinkedList(){
         size = 0;
