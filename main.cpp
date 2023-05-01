@@ -4,6 +4,7 @@
 #include "Implementations/QueueWithLinkedList.h"
 #include "Implementations/SingleLinkedList.h"
 #include "Implementations/Stack.h"
+#include "Implementations/doublyLinkedList.h"
 
 #include "Problems/SortingQueue.h"
 #include "Problems/longestValidParentheses.h"
