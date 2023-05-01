@@ -1,6 +1,8 @@
 //
 // Created by Salma ameer on 01/05/2023.
 //
+#ifndef DS_ASSIGN2_COMBINEZEROSBETWEENNODES_H
+#define DS_ASSIGN2_COMBINEZEROSBETWEENNODES_H
 #include "SingleLinkedList.h"
 #include <iostream>
 using namespace std;
@@ -30,4 +32,6 @@ node<int> *combineNodesBetweenZeros(node<int> *head) {
     }
     return newHead;
 }
+
+#endif //DS_ASSIGN2_COMBINEZEROSBETWEENNODES_H
 

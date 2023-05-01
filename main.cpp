@@ -11,6 +11,7 @@
 #include "Problems/printBinaryIntegers.h"
 #include "Problems/infixToPostfix.h"
 #include "Problems/MergeLinkedList.h"
+#include "Problems/combineZerosInLinkedList.h"
 
 int main(){
     ///++++++++++++++++++++++Implementations++++++++++++++++++++++///
